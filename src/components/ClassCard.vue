@@ -11,7 +11,7 @@ export default {
     methods:{
         nextPage(){
             this.$router.push({
-                path:'/class_card/2'
+                path:'/class_card/3'
             })
         }
     }

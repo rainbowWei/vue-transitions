@@ -1,8 +1,8 @@
 <template>
-    <div class="footer-nav" v-show="isShowNav">
-        <ul class="nav-group">
+    <div class="footer-nav">
+        <ul class="nav-group" v-show="isShowNav">
             <li class="nav-item">
-                <router-link to="/home" exact>
+                <router-link to="/home" exact tag="p">
                     <dl>
                         <dt></dt>
                         <dd>主页</dd>
@@ -11,7 +11,7 @@
             </li>
 
             <li class="nav-item">
-                <router-link to="/class_card">
+                <router-link to="/class_card" tag="p">
                     <dl>
                         <dt></dt>
                         <dd>课程</dd>
@@ -20,7 +20,7 @@
             </li>
 
             <li class="nav-item">
-                <router-link to="/setting">
+                <router-link to="/setting" tag="p">
                     <dl>
                         <dt></dt>
                         <dd>设置</dd>
@@ -53,12 +53,12 @@ export default {
 }
 
 .nav-group {
-    display: flex;
-    flex-direction: row;
+    width:100%;
 }
 
 .nav-item {
-    flex: 1;
+    float: left;
+   width: 33.3%;
 }
 
 .nav-item dl {

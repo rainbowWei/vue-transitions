@@ -33,5 +33,8 @@ export default {
 .transitionRouter-enter,
 .transitionRouter-leave{
     transform: translate3d(100%, 0, 0);
+    /* transform:rotate(10deg) */
+    /* transform: scale(1.5) */
+    /* transform: translate(1000px 0) */
 }
 </style>
